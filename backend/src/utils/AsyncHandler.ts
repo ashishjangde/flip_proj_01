@@ -8,10 +8,9 @@ interface FuncType {
 export default function asyncHandler(func : FuncType){
     return async (req: Request , res : Response , next : NextFunction) =>{
         try {
-            func(req , res)
+           await func(req , res)
         } catch (error) {
             next(error)
         }
     }
 }
-

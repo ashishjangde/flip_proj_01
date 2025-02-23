@@ -9,7 +9,8 @@ interface IPostSchema{
 const PostSchema = new Schema<IPostSchema>({
     title: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     content: {
         type: String,
