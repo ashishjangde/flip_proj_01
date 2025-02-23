@@ -8,7 +8,7 @@ postRouter.post("/post", createPost)
 
 postRouter.get("/post/:id",getPostById)
 
-postRouter.get("/posts",getAllPosts)
+postRouter.get("/post",getAllPosts)
 
 postRouter.put("/post/:id",updatePost)
 
